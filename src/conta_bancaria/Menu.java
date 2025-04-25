@@ -28,12 +28,12 @@ public class Menu {
 		
 		while (true) {
 
-			System.out.println(Cores.ANSI_ORANGE_BACKGROUND_BRIGHT + Cores.TEXT_WHITE_BOLD_BRIGHT +"*****************************************************");
+			System.out.println(Cores.ANSI_ORANGE_BACKGROUND_BRIGHT + Cores.TEXT_BLUE_PETROLEUM_BOLD +"*****************************************************");
 			System.out.println("                                                     ");
 			System.out.println("                BANCO DO BRAZIL COM Z                ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
-			System.out.println(Cores.ANSI_BLUE_PETROLEUM_BACKGROUND + Cores.TEXT_WHITE_BOLD + "                                                     ");
+			System.out.println(Cores.ANSI_BLUE_PETROLEUM_BACKGROUND + Cores.TEXT_WHITE + "                                                     ");
 			System.out.println("            1 - Criar Conta                          ");
 			System.out.println("            2 - Listar todas as Contas               ");
 			System.out.println("            3 - Buscar Conta por Numero              ");
@@ -44,7 +44,7 @@ public class Menu {
 			System.out.println("            8 - Transferir valores entre Contas      ");
 			System.out.println("            9 - Sair                                 ");
 			System.out.println("                                                     ");
-			System.out.println(Cores.ANSI_ORANGE_BACKGROUND_BRIGHT + Cores.TEXT_WHITE_BOLD_BRIGHT + "*****************************************************");
+			System.out.println(Cores.ANSI_ORANGE_BACKGROUND_BRIGHT + Cores.TEXT_BLUE_PETROLEUM_BOLD + "*****************************************************");
 			System.out.print(Cores.ANSI_BLACK_BACKGROUND + Cores.TEXT_WHITE_BOLD + "\nEntre com a opção desejada: ");
 			
 			opcao = leia.nextInt();

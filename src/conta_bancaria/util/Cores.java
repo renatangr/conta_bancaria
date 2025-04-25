@@ -15,6 +15,8 @@ public class Cores {
 			public static final String TEXT_CYAN = "\u001B[36m";
 			public static final String TEXT_WHITE = "\u001B[37m";
 			public static final String TEXT_ORANGE = "\033[38;5;208m";
+			public static final String TEXT_BLUE_PETROLEUM = "\033[38;5;23m";
+			public static final String TEXT_LILAC = "\033[38;5;183m";
 	 
 			
 			//Text Color Bold
@@ -27,6 +29,9 @@ public class Cores {
 			public static final String TEXT_CYAN_BOLD = "\033[1;36m";
 			public static final String TEXT_WHITE_BOLD = "\033[1;37m";
 			public static final String TEXT_ORANGE_BOLD = "\033[1;38;5;208m";
+			public static final String TEXT_BLUE_PETROLEUM_BOLD = "\033[1;38;5;23m";
+			public static final String TEXT_LILAC_BOLD = "\033[1;38;5;183m";
+
 
 	 
 			//Reset Text Underline
@@ -39,6 +44,9 @@ public class Cores {
 			public static final String TEXT_CYAN_UNDERLINED = "\033[4;36m"; 
 			public static final String TEXT_WHITE_UNDERLINED = "\033[4;37m"; 
 			public static final String TEXT_ORANGE_UNDERLINED = "\033[4;38;5;208m";
+			public static final String TEXT_BLUE_PETROLEUM_UNDERLINED = "\033[4;38;5;23m";
+			public static final String TEXT_LILAC_UNDERLINED = "\033[4;38;5;183m";
+			
 			
 			// Text Color High Intensity
 			public static final String TEXT_BLACK_BRIGHT = "\033[0;90m";  
@@ -50,6 +58,7 @@ public class Cores {
 			public static final String TEXT_CYAN_BRIGHT = "\033[0;96m";   
 			public static final String TEXT_WHITE_BRIGHT = "\033[0;97m";  
 			public static final String TEXT_ORANGE_BRIGHT = "\033[0;38;5;214m";
+			public static final String TEXT_LILAC_BRIGHT = "\033[0;48;5;189m";
 
 	 
 			// Text Color Bold High Intensity
@@ -62,6 +71,8 @@ public class Cores {
 			public static final String TEXT_CYAN_BOLD_BRIGHT = "\033[1;96m";  
 			public static final String TEXT_WHITE_BOLD_BRIGHT = "\033[1;97m";
 			public static final String TEXT_ORANGE_BOLD_BRIGHT = "\033[1;38;5;214m";
+			public static final String TEXT_LILAC_BOLD_BRIGHT = "\033[1;48;5;189m";
+			
 
 	 
 			// Background Color
@@ -74,8 +85,13 @@ public class Cores {
 			public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 			public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 			public static final String ANSI_ORANGE_BACKGROUND = "\033[48;5;208m";
-			public static final String ANSI_ORANGE_PASTEL_BACKGROUND = "\033[48;5;216m";
 			public static final String ANSI_BLUE_PETROLEUM_BACKGROUND = "\033[48;5;23m";
+			public static final String ANSI_LILAC_BACKGROUND = "\033[48;5;183m";
+			public static final String ANSI_GREEN_AQUA_BACKGROUND = "\033[48;5;78m";
+			public static final String ANSI_PASTEL_PINK_BACKGROUND = "\033[48;5;218m";
+
+
+
 
 
 			
@@ -89,6 +105,8 @@ public class Cores {
 			public static final String ANSI_CYAN_BACKGROUND_BRIGHT = "\033[0;106m";  
 			public static final String ANSI_WHITE_BACKGROUND_BRIGHT = "\033[0;107m";
 			public static final String ANSI_ORANGE_BACKGROUND_BRIGHT = "\033[48;5;214m";
+			public static final String ANSI_LILAC_BACKGROUND_BRIGHT = "\033[48;5;189m";
+
 
 
 }
