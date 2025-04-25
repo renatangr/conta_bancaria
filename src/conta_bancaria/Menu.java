@@ -13,8 +13,8 @@ public class Menu {
 
 		int opcao;
 		
-		Conta c1 = new Conta(18001, 001, 1, "Aylla", 500000);
-		c1.visualizar();
+		Conta c1 = new Conta(18001, 001, 1, "Renata", 500000);
+		
 		c1.sacar(600);
 		c1.visualizar();
 		c1.sacar(90000000);
@@ -22,10 +22,9 @@ public class Menu {
 		c1.depositar(1900);
 		c1.visualizar();
 		
-		c1.setTitular("Aylla Scaglia");
+		c1.setTitular("Renata Negrini");
 		c1.visualizar();
-		
-		
+
 		while (true) {
 
 			System.out.println(Cores.ANSI_ORANGE_BACKGROUND_BRIGHT + Cores.TEXT_BLUE_PETROLEUM_BOLD +"*****************************************************");
@@ -60,10 +59,12 @@ public class Menu {
 			switch (opcao) {
 				case 1:
 					System.out.println("Criar Conta\n\n");
-
+					
+					
 					break;
 				case 2:
 					System.out.println("Listar todas as Contas\n\n");
+					c1.visualizar();
 
 					break;
 				case 3:
@@ -80,10 +81,12 @@ public class Menu {
 					break;
 				case 6:
 					System.out.println("Saque\n\n");
+					c1.sacar(600);
 
 					break;
 				case 7:
 					System.out.println("Depósito\n\n");
+					c1.depositar(1900);
 
 					break;
 				case 8:
