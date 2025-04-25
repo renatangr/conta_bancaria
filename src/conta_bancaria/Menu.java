@@ -19,7 +19,7 @@ public class Menu {
 			System.out.println("                BANCO DO BRAZIL COM Z                ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
-			System.out.println(Cores.ANSI_BLACK_BACKGROUND_BRIGHT + Cores.TEXT_WHITE_BOLD + "                                                     ");
+			System.out.println(Cores.ANSI_BLUE_PETROLEUM_BACKGROUND + Cores.TEXT_WHITE_BOLD + "                                                     ");
 			System.out.println("            1 - Criar Conta                          ");
 			System.out.println("            2 - Listar todas as Contas               ");
 			System.out.println("            3 - Buscar Conta por Numero              ");
@@ -86,7 +86,7 @@ public class Menu {
 	
 	public static void sobre() {
 		System.out.println(Cores.ANSI_ORANGE_BACKGROUND_BRIGHT + Cores.TEXT_WHITE_BOLD_BRIGHT + "\n*********************************************************");
-		System.out.println(Cores.ANSI_BLACK_BACKGROUND_BRIGHT + Cores.TEXT_WHITE_BOLD + "Projeto Desenvolvido por:                                ");
+		System.out.println(Cores.ANSI_BLUE_PETROLEUM_BACKGROUND + Cores.TEXT_WHITE_BOLD + "Projeto Desenvolvido por:                                ");
 		System.out.println("Renata Negrini - renata.negrini@gmail.com.br             ");
 		System.out.println("github.com/renatangr                                     ");
 		System.out.println(Cores.ANSI_ORANGE_BACKGROUND_BRIGHT + Cores.TEXT_WHITE_BOLD_BRIGHT + "*********************************************************");
