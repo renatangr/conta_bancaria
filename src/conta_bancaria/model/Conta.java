@@ -19,6 +19,8 @@ public class Conta {
 		this.titular = titular;
 		this.saldo = saldo;
 	}
+	
+	public Conta() {}
 
 	// Getters and Setters
 	public int getNumero() {
@@ -100,7 +102,7 @@ public class Conta {
         System.out.println("Tipo da Conta: " + tipo);
         System.out.println("Titular da Conta: " + this.titular);
         System.out.println("Saldo da Conta: " + nfMoeda.format(this.saldo));
-        System.out.println("*************************************\n");
+        //System.out.println("*************************************\n");
 	}
 	
 	

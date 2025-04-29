@@ -3,6 +3,8 @@ package conta_bancaria;
 import java.util.Scanner;
 
 import conta_bancaria.model.Conta;
+import conta_bancaria.model.ContaCorrente;
+import conta_bancaria.model.ContaPoupanca;
 import conta_bancaria.util.Cores;
 
 public class Menu {
@@ -13,7 +15,7 @@ public class Menu {
 
 		int opcao;
 		
-		Conta c1 = new Conta(18001, 001, 1, "Renata", 500000);
+		Conta c1 = new Conta(18001, 1, 1, "Renata", 500000);
 		
 		c1.sacar(600);
 		c1.visualizar();
@@ -24,7 +26,28 @@ public class Menu {
 		
 		c1.setTitular("Renata Negrini");
 		c1.visualizar();
-
+		
+		ContaCorrente cc1 = new ContaCorrente(1290, 2, 1, "Renata Negrini", 600000, 60000);
+		cc1.visualizar();
+		
+		cc1.sacar(659000);
+		cc1.visualizar();
+		
+		cc1.depositar(50000);
+		cc1.visualizar();
+		
+		ContaPoupanca cp1 = new ContaPoupanca(3003, 90, 2, "Adele", 40000, 29);
+		cp1.visualizar();
+		
+		cp1.sacar(3000);
+		cp1.visualizar();
+		
+		cp1.depositar(9000);
+		cp1.visualizar();
+		
+		cp1.renderContaPoupanca(29, 0.5f);
+		cp1.visualizar();
+		
 		while (true) {
 
 			System.out.println(Cores.ANSI_ORANGE_BACKGROUND_BRIGHT + Cores.TEXT_BLUE_PETROLEUM_BOLD +
