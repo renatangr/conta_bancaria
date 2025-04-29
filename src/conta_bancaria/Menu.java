@@ -2,7 +2,6 @@ package conta_bancaria;
 
 import java.util.Scanner;
 
-import conta_bancaria.model.Conta;
 import conta_bancaria.model.ContaCorrente;
 import conta_bancaria.model.ContaPoupanca;
 import conta_bancaria.util.Cores;
@@ -14,18 +13,6 @@ public class Menu {
 		Scanner leia = new Scanner(System.in);
 
 		int opcao;
-		
-		Conta c1 = new Conta(18001, 1, 1, "Renata", 500000);
-		
-		c1.sacar(600);
-		c1.visualizar();
-		c1.sacar(90000000);
-		
-		c1.depositar(1900);
-		c1.visualizar();
-		
-		c1.setTitular("Renata Negrini");
-		c1.visualizar();
 		
 		ContaCorrente cc1 = new ContaCorrente(1290, 2, 1, "Renata Negrini", 600000, 60000);
 		cc1.visualizar();
@@ -91,7 +78,7 @@ public class Menu {
 					break;
 				case 2:
 					System.out.println("Listar todas as Contas\n\n");
-					c1.visualizar();
+					
 
 					break;
 				case 3:
@@ -108,12 +95,12 @@ public class Menu {
 					break;
 				case 6:
 					System.out.println("Saque\n\n");
-					c1.sacar(600);
+					
 
 					break;
 				case 7:
 					System.out.println("Depósito\n\n");
-					c1.depositar(1900);
+					
 
 					break;
 				case 8:
