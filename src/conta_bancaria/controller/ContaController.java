@@ -19,12 +19,10 @@ public class ContaController implements ContaRepository {
 	public void procurarPorNumero(int numero) {
 		Optional <Conta> conta = buscarNaCollection(numero);
 		
-		if (conta.isEmpty()) 
+		if (conta.isPresent()) 
 			conta.get().visualizar();
 		else
 			System.out.printf("\nA Conta número %d não foi encontrada", numero);
-		
-		
 	}
 
 	@Override
@@ -44,13 +42,27 @@ public class ContaController implements ContaRepository {
 
 	@Override
 	public void atualizar(Conta conta) {
-		// TODO Auto-generated method stub
+		Optional <Conta> buscaConta = buscarNaCollection(conta.getNumero());
+		
+		if (buscaConta.isPresent()) {
+			listaContas.set(listaContas.indexOf(buscaConta.get()), conta);
+			System.out.printf("\nA Conta número %d foi atualizada com sucesso!", conta.getNumero());
+		} else {
+			System.out.printf("\nA Conta número %d não foi encontrada", conta.getNumero());
+		}
 		
 	}
 
 	@Override
 	public void deletar(int numero) {
-		// TODO Auto-generated method stub
+		Optional <Conta> conta = buscarNaCollection(numero);
+		
+		if (conta.isPresent()) {
+			if(listaContas.remove(conta.get()) == true);
+			System.out.printf("\nA Conta número %d foi excluída com sucesso", numero);
+		} else {
+			System.out.printf("\nA Conta número %d não foi encontrada", numero);
+		}
 		
 	}
 
